@@ -1,0 +1,30 @@
+.panel-layout {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 55px;
+  background-color: #e5e5e5;
+}
+
+.panel-layout ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel-layout ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.panel-layout ul li a {
+  color: #000;
+}
+
+.panel-layout ul li img {
+  padding-right: 8px;
+}
+
+.panel-layout .track-played {
+  background-color: #fff9e5;
+}

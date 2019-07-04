@@ -1,0 +1,37 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #fff;
+}
+
+.user > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-avatar {
+  padding-right: 8px;
+}
+
+.user-name {
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+.user-name a {
+  color: #000;
+}
+
+.user-logo {
+  width: 60px;
+}
