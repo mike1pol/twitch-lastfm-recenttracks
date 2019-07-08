@@ -6,7 +6,7 @@ export function getUserInfo(config, setUser) {
   )
     .then(r => r.json())
     .then(({ user }) => setUser(user))
-    .catch(console.error);
+    .catch(err => console.error('getUserInfo error:', err));
 }
 
 export function recentPlayed(config, setTracks) {
@@ -20,7 +20,10 @@ export function recentPlayed(config, setTracks) {
       setTracks(track);
       setTimeout(() => recentPlayed(config, setTracks), 1000 * 10);
     })
-    .catch(console.error);
+    .catch(err => {
+      console.error('recentPlayed error:', err);
+      setTimeout(() => recentPlayed(config, setTracks), 1000 * 10);
+    });
 }
 
 export function getImageUrl(list, size = 'small') {
